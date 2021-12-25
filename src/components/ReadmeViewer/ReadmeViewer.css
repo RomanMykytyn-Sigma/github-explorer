@@ -1,0 +1,8 @@
+/* have to rewrite base tailwind style */
+.markdown-body img {
+    display: inline;
+}
+
+.markdown-body ul, ol, menu {
+    list-style: revert;
+}

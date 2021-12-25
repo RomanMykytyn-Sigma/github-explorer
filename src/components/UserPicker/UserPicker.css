@@ -1,0 +1,63 @@
+.user-picker {
+	position: relative;
+	width: 240px;
+	transition: width 500ms;
+}
+
+.user-picker_active {
+	width: 360px;
+	transition: width 500ms;
+}
+
+.user-picker-search {
+	outline: none;
+	width: 100%;
+	padding: 2px 8px;
+	border: 1px solid gray;
+	border-radius: 6px;
+	background-color: transparent;
+	color: lightgray;
+}
+
+.user-picker-search::placeholder {
+	color: gray;
+	font-weight: 300;
+}
+
+.user-picker-search_active {
+	background-color: #f6f8fa;
+	border-color: lightgray;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-width: 0;
+	color: black;
+}
+
+.user-picker-list-item {
+	display: flex;
+	cursor: pointer;
+	padding: 6px 10px;
+	border-bottom-width: 1px;
+}
+
+.user-picker-list-item:hover {
+	background-color: royalblue;
+	color: white;
+}
+
+.user-picker-list-item:hover > div {
+	background-image: url("../../../public/user-icon_white.svg");
+}
+
+.user-picker-list-item-icon {
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+	background-image: url("../../../public/user-icon_black.svg");
+}
+
+.user-picker-loader {
+	width: 48px;
+	height: 48px;
+	margin: 0 auto;
+}
